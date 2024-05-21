@@ -68,6 +68,21 @@
     <div class="copyright">
         <p>Copyright © Ritesh. Made with by <i class='bx bxs-heart' class="heart"></i> Ritesh Mehra</p>
     </div>
+
+    <script src="../main.js"></script>
+
+    <script>
+        let bar = document.getElementById("bar")
+        let link = document.getElementById("link")
+        let imgBar = document.getElementById("imgBar")
+        let cross = document.getElementById("cross")
+
+        bar.addEventListener('click', () => {
+            link.classList.toggle('navToggle')
+            imgBar.classList.toggle('navToggle')
+            cross.classList.toggle('navToggle')
+        })
+    </script>
 </body>
 
 </html>
