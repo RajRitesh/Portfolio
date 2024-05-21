@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritesh</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <link rel="icon" href="img/logo 2.png" type="image/x-icon">
+</head>
+<body>
+    
+    <div class="header">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo"><img src="img/logo 3.png" alt="logo"></a>
+                <div class="menu-icon" onclick="toggleNavMenu()">
+                    <div class="icon show" id="menuIcon" onclick="togglePlus()">&#9776;</div>
+                    <div class="icon" id="closeIcon"  onclick="toggleCross()">&#10005;</div>
+                </div>
+                <ul id="navMenu">
+                    <li><a onclick="removeBg()" href="#home">Home</a></li>
+                    <li><a onclick="removeBg()" href="#about">About</a></li>
+                    <li><a onclick="removeBg()" href="#services">Services</a></li>
+                    <li><a onclick="removeBg()" href="#portfolio">Testimonials</a></li>
+                    <li><a onclick="removeBg()" href="/Portfolio/my-work/index.html">Works</a></li>
+                    <li><a onclick="removeBg()" href="#contact">Contact</a></li>
+                </ul>
+                
+            </nav>
+        </div>  
+    </div>
+
+        <section id="home" class="home">
+            <div class="home-content">
+                <h3>Hello, It's Me</h3>
+                <h1>Ritesh Mehra</h1>
+                <h3>And I'm a <span class="text"></span></h3>
+                <p>I'm a Graphics Designer & UI/UX Designer with extensive experience for over 5 years.
+                    <br>My expertise is to create Posters, Web/App Design, Brochure, etc.
+                </p>
+                <div class="home-sci">
+                    <a href="https://www.instagram.com/ritesh_mehra_41/" style="--i:8" target="_blank"><i class='bx bxl-instagram'></i></box-icon></a>
+                    <a href="https://www.linkedin.com/in/ritesh-kumar-39a471208/" style="--i:10" target="_blank"><i class='bx bxl-linkedin' ></i></box-icon></a>
+                    <a href="https://github.com/RajRitesh" style="--i:9" target="_blank"><i class='bx bxl-github'></i></box-icon></a>
+                    <a href="https://www.behance.net/riteshkumar99" style="--i:7" target="_blank"><i class='bx bxl-behance'></i></a>
+                </div>
+                <a href= "https://drive.google.com/file/d/12sDBxIDQf8s8y5RtIY4a3ZbF8gPqQSW2/view?usp=sharing" target="_blank" class="btn-box">Resume</a>
+                <a href= "/Ritesh/My_Portfolio/my-work/my-works.html" download target="_blank" class="btn-box">Works</a>
+              
+            </div>
+            <img class="my-img" src="img/my_img 2.png" alt="">
+        </section>
+    
+
+    <!--------------About-------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/abt-img2.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>"I've transformed the digital presence of one startups and worked with over ten freelance 
+                        clients globally, showcasing my expertise in Graphic and UI/UX design to create exceptional 
+                        user experiences." <br> <br>
+                        My journey as a Electronics student turned Graphic and UI/UX design designer and experienced UX/UI engineer 
+                        has been a thrilling and transformative one. By combining my technical background with creative problem-solving 
+                        skills, I am able to deliver impactful and delightful user experiences.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Graphic Designing :</span> Adobe Illustrator, Adobe Photoshop</li>
+                            <li><span>UI/UX Designing :</span> Figma, Adobe XD</li>
+                            <li><span>Web Development :</span> HTML, CSS, JavaScript, Bootstrap</li>
+                            <li><span>Programing Languages :</span> C++, Python</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI/UX Intern</span><br>Digitea <i>(Designing Agency)</i></li>
+                            <li><span>Graphics Lead Intern</span><br>Cerebro Kids <i>(Financial literacy company)</i></li>
+                            <li><span>Graphic Designer Intern</span><br>Milo Doctor <i>(Healthcare service provider company)</i></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech</span><br>Electronics & Communication Engineering</li>
+                            <li><span>Intermediate</span><br>Saraswati Shishu Vidya Mandir, Madhupur</li>
+                            <li><span>Matriculation</span><br>Saraswati Shishu Vidya Mandir, Madhupur</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------Services-------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class='bx bxs-pen'></i>
+                    <h2>UI/UX Design</h2>
+                    <p>"UI/UX Designing is the art of creating visually appealing and user-friendly digital experiences by carefully designing interfaces, 
+                        interactions, and workflows that seamlessly blend form and function."
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class='bx bxs-crop'></i>
+                    <h2>Brand Design</h2>
+                    <p>"Graphics Designing is the art of visually communicating ideas, messages, and branding through the creative use of typography, 
+                        illustrations, images, and other visual elements, ensuring impactful and visually captivating designs."
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class='bx bxs-pen'></i>
+                    <h2>Graphic Design</h2>
+                    <p>"Graphics Designing is the art of visually communicating ideas, messages, and branding through the creative use of typography, 
+                        illustrations, images, and other visual elements, ensuring impactful and visually captivating designs."
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------Testimonial-------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Testimonial</h1>
+            <div class="swiper testCard">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testRCard">
+                            <div class="testText">
+                                <div class="trcHeading">Strong Understanding of UI/UX Design</div>
+                                <div class="trcPara">During his tenure with us, he has shown a strong understanding of UI
+                                    design principles and has consistently delivered high-quality work. He has been a
+                                    valuable team player, demonstrating a positive attitude, willingness to learn, and
+                                    excellent person to work with. I am confident that he will excel in any design-related
+                                    role in the future
+                                </div>
+                            </div>
+                            <div class="testClient">
+                                <img src="img/Divyesh.jpg" alt="">
+                                <div class="clientAbout">
+                                    <div class="clientName">Divyesh Khamele</div>
+                                    <div class="clientCom">Signimus Technology</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+              <div class="swiper-slide">
+                        <div class="testRCard">
+                            <div class="testText">
+                                <div class="trcHeading">Working with Him Was Easy</div>
+                                <div class="trcPara">"Working with Ritesh has been an absolute game-changer for our brand. Her keen eye for detail and innovative design skills brought our vision to life in ways we couldn't have imagined. Ritesh's creativity, professionalism, and commitment to excellence make her an invaluable asset to any project. We couldn't be happier with the results and highly recommend her for any graphic design needs!"
+                                </div>
+                            </div>
+                            <div class="testClient">
+                                <img src="img/Karan Mehta.jpg" alt="rt6.jpg">
+                                <div class="clientAbout">
+                                    <div class="clientName">Karan Raj Mehta</div>
+                                    <div class="clientCom">Milo Doctor</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <div class="swiper-slide">
+                        <div class="testRCard">
+                            <div class="testText">
+                                <div class="trcHeading">Great experience working with him so far</div>
+                                <div class="trcPara">Ritesh surely will take the necessary time required to understand the task but will make 
+                                    sure he delivers exactly what he is expected to. It is a great experience working with him so far.
+                                </div>
+                            </div>
+                            <div class="testClient">
+                                <img src="img/Arpit.jpg" alt="">
+                                <div class="clientAbout">
+                                    <div class="clientName">Arpit Gupta</div>
+                                    <div class="clientCom">Founder, Cerebro Kids</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                     <div class="swiper-slide">
+                        <div class="testRCard">
+                            <div class="testText">
+                                <div class="trcHeading">Exceptional quality of work</div>
+                                <div class="trcPara">I am thoroughly impressed by the exceptional quality of your work. 
+                                    Your innovative approach and meticulous attention to detail have significantly enhanced the user experience
+                                    and functionality of our project. Your talent and dedication are truly commendable.
+                                </div>
+                            </div>
+                            <div class="testClient">
+                                <img src="img/Dinesh Sir.jpg" alt="Dinesh">
+                                <div class="clientAbout">
+                                    <div class="clientName">Dr. Dinesh Kumar Prabhakar</div>
+                                    <div class="clientCom">Coordinator, TechMahotsav</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                        
+                </div>
+                <div class="swiper-button-next swiperBtn"></div>
+                <div class="swiper-button-prev swiperBtn"></div>
+                <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!-- ---------------Contact--------------- -->
+    <div id="contact" class="contact">
+        <div id="contact">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class='bx bxl-telegram'></i>riteshkumarmehra41@gmail.com</p>
+                    <p><i class='bx bxs-phone-call'></i>8709902075</p>
+                    <div class="social-icon">
+                        <a href="https://www.instagram.com/ritesh_mehra_41/" target="_blank"><i class='bx bxl-instagram'></i></box-icon></a>
+                        <a href="https://www.linkedin.com/in/ritesh-kumar-39a471208/" target="_blank"><i class='bx bxl-linkedin' ></i></box-icon></a>
+                        <a href="https://github.com/RajRitesh"  target="_blank"><i class='bx bxl-github'></i></box-icon></a>
+                        <a href="https://www.behance.net/riteshkumar99"  target="_blank"><i class='bx bxl-behance'></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/12sDBxIDQf8s8y5RtIY4a3ZbF8gPqQSW2/view?usp=sharing"   class="btn btn2" target="_blank">Resume</a>
+                </div>
+                <!-- </div> -->
+                <div class="contact-right">
+                    <form action="https://api.web3forms.com/submit" method="POST" >
+                        <input type="hidden" name="access_key" value="e6cec893-8f4e-404b-b271-85b5624c25e7">
+                        <input type="hidden" name="redirect" value="/">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="number" name="mobile" placeholder="Your Phone Number" required>
+                        <textarea name="Message" rows="4" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll">
+        <button class="scrollCta" onclick={window.scrollTo(0,0)}><i class="fa-solid fa-circle-up"></i></button>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Ritesh. Made with by <i class='bx bxs-heart' class="heart"></i> Ritesh Mehra</p>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".testCard", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        let bar = document.getElementById("bar")
+        let link = document.getElementById("link")
+        let imgBar = document.getElementById("imgBar")
+        let cross = document.getElementById("cross")
+
+        bar.addEventListener('click', () => {
+            link.classList.toggle('navToggle')
+            imgBar.classList.toggle('navToggle')
+            cross.classList.toggle('navToggle')
+        })
+        function handleScroll(){
+
+            console.log(window.pageYOffset,window.scrollY)
+        }
+        handleScroll()
+
+        // if(window.pageYOffset === window.scrollY){
+
+        // }
+    </script>
+    <script>
+
+    </script>
+    
+    
+</body>
+</html>
